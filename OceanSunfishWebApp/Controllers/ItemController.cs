@@ -19,7 +19,7 @@ namespace OceanSunfishWebApp.Controllers
         [ActionName("Index")]
         public async Task<IActionResult> Index()
         {
-            return View(await _cosmosDbService.GetItemsAsync("SELECT * FROM c"));
+            return View(await _cosmosDbService.GetItemsAsync("SELECT * FROM c ORDER BY c._ts DESC"));
         }
 
         [ActionName("Create")]
