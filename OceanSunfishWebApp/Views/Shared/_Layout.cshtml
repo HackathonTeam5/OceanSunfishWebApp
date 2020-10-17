@@ -14,8 +14,9 @@
                 @*<a Style="color:#e2e5e6;font-family: Source Sans Pros, sans-serif;font-size:13px;padding: 10px 12px;border-right: 1px solid #dddddd66;" class="navbar-brand"
         href="@Url.Action("Index", "Home")">  <img style="width: 175px;" src="~/images/SunfishesArtboard.png" /></a>*@
                 
-                @*<img style="width: 175px;" src="@Url.Content("~/images/SunfishesArtboard.png")" />*@
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Ocean Sunfish</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img style="width: 175px;" src="@Url.Content("https://i.ibb.co/2NZ2y4Z/Sunfishes-Artboard-1-1.png")" />
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" href="https://nih1.sharepoint.com/sites/SunFish">Document Classification &amp; Signature</a>
+                        </li>
+                        @*<li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/">Logs</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +48,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - OceanSunfishWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2020 - OceanSunfishWebApp 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
